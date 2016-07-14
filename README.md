@@ -10,9 +10,9 @@ The root scope containing mathquill elements.
 The element containing visible math symbols
 
 ###math-button
-This element can call cmd on the math-field, having 3 attrs:
+This element can write certain tex content on the math-field, having 3 attrs:
 
-`cmd`: the cmd to call.
+`write`: the tex to write.
 
 `latex`: latex text to be displayed on the button.
 
