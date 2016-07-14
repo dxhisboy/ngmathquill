@@ -9,7 +9,8 @@
   <body ng-app="MathQuillDirective">
     <math-scope>
       <math-field></math-field>
-      <math-button cmd="\frac" latex="\frac{x}{x}" movement="LL"></math-button>
+      <math-button write="\frac{}{}" latex="\frac{x}{x}" movement="LL"></math-button>
+      <math-button write="\left\{\right\}" latex="\left\{x\right\}" movement="L"></math-button>
       <latex-field></latex-field>
     </math-scope>
   </body>

@@ -20,10 +20,10 @@ angular.module("MathQuillDirective", [])
 		this.keystroke = function(stroke) {
 		    $scope.field.keystroke(stroke);
 		}
-		this.cmd = $scope.cmd = function(cmd) {
+		this.write = $scope.write = function(write) {
 		    this.inProc = true;
 		    if ($scope.field)
-			$scope.field.cmd(cmd);
+			$scope.field.write(write);
 		    this.inProc = false;
 		};
 		this.MQ = $scope.MQ = MathQuill.getInterface(2);
@@ -74,7 +74,7 @@ angular.module("MathQuillDirective", [])
 		console.log(span);
 		scopeCtrl.MQ.StaticMath(span[0]);
 		scope.insert = function (){
-		    scopeCtrl.cmd(attrs.cmd);
+		    scopeCtrl.write(attrs.write);
 		    scopeCtrl.focus();
 		    if ("movement" in attrs){
 			var mov = attrs.movement;
