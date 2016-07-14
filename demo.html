@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./mathquill.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./mathquill.min.js"></script>
+    <script src="./ngmathquill.js"></script>
+  </head>
+  <body ng-app="MathQuillDirective">
+    <math-scope>
+      <math-field></math-field>
+      <math-button cmd="\frac" latex="\frac{x}{x}" movement="LL"></math-button>
+      <latex-field></latex-field>
+    </math-scope>
+  </body>
+</html>
